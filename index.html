@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anand Kumar Shanmugham | Building businesses that last</title>
+<meta name="description" content="Entrepreneur and builder of founder-led businesses. Founder of Bloomarai, the company behind Marai, your digital co-founder.">
+<style>
+@font-face{font-family:Newsreader;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/newsreader-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:Newsreader;font-weight:400;font-style:italic;font-display:swap;src:url(fonts/newsreader-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:Newsreader;font-weight:500;font-style:normal;font-display:swap;src:url(fonts/newsreader-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:Newsreader;font-weight:600;font-style:normal;font-display:swap;src:url(fonts/newsreader-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:"Instrument Sans";font-weight:400;font-display:swap;src:url(fonts/instrument-sans-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:"Instrument Sans";font-weight:500;font-display:swap;src:url(fonts/instrument-sans-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:"Instrument Sans";font-weight:600;font-display:swap;src:url(fonts/instrument-sans-latin-600-normal.woff2) format('woff2')}
+:root{--indigo:#1b1a3d;--indigo2:#2a2860;--saffron:#f4a73a;--jade:#2bb39a;--rose:#e9677b;--ink:#17172e;--soft:#55566e;--line:#e6e4ef;--paper:#fffdf9;--blush:#fbf3ea}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Instrument Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500;text-wrap:balance}
+p,li{text-wrap:pretty}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--saffron);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* hero */
+.hero{background:var(--indigo);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(244,167,58,.55),rgba(233,103,123,.25) 45%,transparent 70%);pointer-events:none}
+.top{display:flex;justify-content:space-between;align-items:center;padding:28px 0;position:relative;z-index:2}
+.name{font-family:Newsreader,Georgia,serif;font-size:20px;font-weight:600;text-decoration:none;letter-spacing:.2px}
+.top nav a{font-size:15px;font-weight:500;margin-left:26px;text-decoration:none;color:#d9d8f2}
+.top nav a:hover{color:var(--saffron)}
+.hero-body{position:relative;z-index:2;padding:70px 0 110px;max-width:860px}
+.hero h1{font-size:88px;line-height:.98;letter-spacing:-2.4px;font-weight:500}
+.hero h1 em{font-style:italic;color:var(--saffron)}
+.hero .intro{font-size:21px;color:#d9d8f2;margin-top:30px;max-width:640px}
+.hero .intro b{color:#fff;font-weight:600}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.chips span{font-size:14px;font-weight:500;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.25);color:#efeefe}
+.chips span:nth-child(1){border-color:var(--saffron);color:var(--saffron)}
+.chips span:nth-child(2){border-color:var(--jade);color:#7fe0cc}
+.chips span:nth-child(3){border-color:var(--rose);color:#ffb3bf}
+
+section{padding:96px 0}
+h2{font-size:48px;line-height:1.08;letter-spacing:-1px}
+.lede{font-size:19px;color:var(--soft);max-width:620px;margin-top:16px}
+
+/* belief */
+.belief{background:var(--blush)}
+.belief-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+.belief blockquote{font-family:Newsreader,Georgia,serif;font-size:38px;line-height:1.22;letter-spacing:-.4px;color:var(--indigo)}
+.belief blockquote span{background:linear-gradient(transparent 62%,rgba(244,167,58,.45) 62%)}
+.belief .story p{color:var(--soft);font-size:17.5px;margin-bottom:16px}
+.belief .story p:last-child{margin-bottom:0}
+
+/* ventures */
+.ventures{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:20px;margin-top:48px}
+.v{border-radius:24px;padding:30px;display:flex;flex-direction:column;min-height:330px}
+.v .when{font-size:14px;font-weight:600;letter-spacing:.2px}
+.v h3{font-size:34px;line-height:1.1;margin:10px 0 6px}
+.v .sub{font-weight:600;font-size:15px;margin-bottom:14px}
+.v p{font-size:16px}
+.v .more{margin-top:auto;padding-top:22px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.v1{background:var(--indigo2);color:#fff}
+.v1 .when{color:var(--saffron)} .v1 .sub{color:#b9b7ff} .v1 p{color:#d6d5f3}
+.v2{background:var(--jade);color:#06231d}
+.v2 .when{color:#0b4a3e} .v2 p{color:#0d3b32}
+.v3{background:#fff;border:2px dashed #d7d3e6;color:var(--ink)}
+.v3 .when{color:var(--rose)} .v3 p{color:var(--soft)}
+
+/* how I work */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.h{padding-top:22px;border-top:3px solid var(--saffron)}
+.h:nth-child(2){border-color:var(--jade)}.h:nth-child(3){border-color:var(--rose)}
+.h h3{font-size:25px;line-height:1.2;margin-bottom:10px}
+.h p{color:var(--soft);font-size:16px}
+
+/* experience band */
+.band{background:var(--indigo);color:#fff}
+.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.band h2{color:#fff}
+.band p{color:#d0cfee;font-size:17.5px;margin-top:14px}
+.proof{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:30px}
+.proof .fig{font-family:Newsreader,Georgia,serif;font-size:50px;line-height:1;color:var(--saffron)}
+.proof p{margin-top:12px;font-size:15.5px;color:#d0cfee}
+.proof .edu{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:15px;color:#bdbce0}
+.proof .edu b{color:#fff;font-weight:600}
+
+/* contact */
+.contact{text-align:center}
+.contact h2{margin:0 auto;max-width:700px}
+.contact .lede{margin:16px auto 0}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-block;padding:15px 24px;border-radius:14px;font-weight:600;text-decoration:none}
+.btn.a{background:var(--indigo);color:#fff}
+.btn.b{background:var(--saffron);color:var(--indigo)}
+.btn:hover{filter:brightness(1.07)}
+
+footer{border-top:1px solid var(--line);padding:30px 0;color:#8b8aa3;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media(max-width:900px){
+  .hero h1{font-size:60px;letter-spacing:-1.4px}
+  .belief-grid,.band-grid{grid-template-columns:1fr;gap:36px}
+  .ventures{grid-template-columns:1fr 1fr}.v1{grid-column:1/-1}
+  .how{grid-template-columns:1fr}
+  h2{font-size:38px}.belief blockquote{font-size:31px}
+}
+@media(max-width:600px){
+  .wrap{padding:0 20px}
+  .top nav{display:none}
+  .hero-body{padding:40px 0 76px}
+  .hero h1{font-size:46px;letter-spacing:-1px}
+  .hero .intro{font-size:18px}
+  section{padding:66px 0}
+  .ventures{grid-template-columns:1fr}
+  h2{font-size:32px}.belief blockquote{font-size:26px}
+  .v{min-height:0}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="top">
+      <a class="name" href="#">Anand Kumar Shanmugham</a>
+      <nav aria-label="Main"><a href="#ventures">Ventures</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+    </div>
+    <div class="hero-body">
+      <h1>Building businesses that <em>outlast the chaos.</em></h1>
+      <p class="intro"><b>Entrepreneur. Builder. Founder of Bloomarai.</b> Twenty years of turning how organisations work into how they win, now put to work for founders who carry everything themselves.</p>
+      <div class="chips"><span>Founder, Bloomarai</span><span>Building Marai</span><span>UAE and India</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="belief">
+  <div class="wrap belief-grid">
+    <blockquote>Big organisations have strategy teams to help them think. <span>Small founders have themselves.</span></blockquote>
+    <div class="story">
+      <p>I’ve lived on both sides of that gap. I learned my craft inside organisations, from quality systems on factory floors in Chennai to strategy rooms in the UAE, where I saw that most problems aren’t caused by people, but by how the work is set up around them.</p>
+      <p>Then I built a business of my own. My brother and I started a sportswear brand from nothing and ran it for five years, with late-night calls and every risk shared between two people. That taught me what no framework had: how heavy decisions feel when they’re all yours.</p>
+      <p>Everything I build now starts there.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ventures">
+  <div class="wrap">
+    <h2>Ventures</h2>
+    <p class="lede">Businesses I have founded and am building, each aimed at the same founder problem from a different angle.</p>
+    <div class="ventures">
+      <div class="v v1">
+        <div class="when">Now</div>
+        <h3>Bloomarai</h3>
+        <div class="sub">Founder. Home of Marai, our first product.</div>
+        <p>Bloomarai turns an organisation’s experience into intelligence it can act on. Its first product, Marai, is a digital co-founder: an AI that reads a founder’s business email and documents, keeps the whole picture and says what matters each morning. Now in private beta.</p>
+        <a class="more" href="https://maraiai.com">Meet Marai</a>
+      </div>
+      <div class="v v2">
+        <div class="when">2010 – 2015</div>
+        <h3>Macinnez</h3>
+        <div class="sub">Co-founder</div>
+        <p>A sportswear brand and sports consultancy in Chennai, built from nothing with my brother and run alongside a full&#8209;time career.</p>
+      </div>
+      <div class="v v3">
+        <div class="when">Next</div>
+        <h3>What comes next</h3>
+        <div class="sub">Open to conversations</div>
+        <p>I’m always interested in founders and ideas that make small businesses stronger. If you’re building something in that space, I’d like to hear about it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="approach" style="padding-top:0">
+  <div class="wrap">
+    <h2>How I work</h2>
+    <div class="how">
+      <div class="h"><h3>Fix the system, not the people</h3><p>When work keeps breaking, the cause is almost always how it is set up. Change the set-up and good people do great work.</p></div>
+      <div class="h"><h3>Give judgement a better room</h3><p>Data and AI earn their place when they help people decide, not when they decide for them. Technology should make the picture clearer and the choice yours.</p></div>
+      <div class="h"><h3>Build for the long run</h3><p>Patient, quiet work compounds. I’d rather build something that is still standing in ten years than something that is loud this year.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap band-grid">
+    <div>
+      <h2>Twenty years inside the machine</h2>
+      <p>Quality systems across plants and suppliers. Customer operations for one of the UAE’s leading exchange houses. Group strategy and excellence programmes for a diversified family business. Advisory work in management systems and mergers. Transformation and performance at the highest levels of organisations.</p>
+      <p>It is the experience I now bring to founders.</p>
+    </div>
+    <div class="proof">
+      <div class="fig">2.19% → under 1%</div>
+      <p>Failed money transfers, cut in six months by tracing every failure point and rebuilding the process, saving over AED 3 million a year. The case study was published and recognised with awards.</p>
+      <div class="edu"><b>Master’s in Information Management, Business Intelligence</b>, NOVA IMS, 2025<br><b>Bachelor of Engineering, Electrical and Electronics</b>, University of Madras</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Building something for founders? Let’s talk.</h2>
+    <p class="lede">Founders, collaborators and people who share an interest in useful technology are always welcome.</p>
+    <div class="btns">
+      <a class="btn a" href="https://www.linkedin.com/in/anand-kumar-shanmugham-13345b22/">Connect on LinkedIn</a>
+      <a class="btn b" href="mailto:contact@ansukumar.com">contact@ansukumar.com</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Anand Kumar Shanmugham</span><span>ansukumar.com</span></div></footer>
+</body>
+</html>
